@@ -23,13 +23,16 @@ div#content {
   margin: 0;
   padding: 0;
 }
-td,tr {
+td {
+  border-collapse: collapse;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
   border: 1px solid gray;
   align-items: center;
   vertical-align: middle;
   text-align: center;
   width: 100px;
 }
-div#space{
-    margin:20px;
+div#space {
+  margin: 20px;
 }
