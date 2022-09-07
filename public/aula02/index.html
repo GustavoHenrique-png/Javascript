@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="container">
+            <p id="visor"></p>
+        <table>
+            <tr>
+                <td><button onClick="limpa()" id="botao">C</button></td>
+                <td><button id="botao">></button></td>
+                <td><button onclick="insere('/')" id="botao">/</button></td>
+                <td><button onclick="insere('x')" id="botao">x</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insere('7')" id="botao">7</button></td>
+                <td><button onclick="insere('8')"  id="botao">8</button></td>
+                <td><button onclick="insere('9')"  id="botao">9</button></td>
+                <td><button onclick="insere('-')" id="botao">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insere('4')"  id="botao">4</button></td>
+                <td><button onclick="insere('5')"  id="botao">5</button></td>
+                <td><button onclick="insere('6')"  id="botao">6</button></td>
+                <td><button onclick="insere('+')" id="botao">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insere('1')"  id="botao">1</button></td>
+                <td><button onclick="insere('2')"  id="botao">2</button></td>
+                <td><button onclick="insere('3')"  id="botao">3</button></td>
+                <td rowspan="2"><button onclick="calcula()"  id="botao" style="height: 106px;">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="insere('0')"  id="botao"style="width: 106px;">0</button></td>
+                <td><button id="botao">.</button></td>
+            </tr>
+        </table>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
