@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+div#header {
+  background-color: #373737;
+  color: #ffff;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+div#header h1 {
+  margin-left: 20px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+div#title h1 {
+  font-size: 40px;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+div#content {
+  margin: 0;
+  padding: 0;
+}
+tr#colum {
+  background-color: #d3d3d3;
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  border-collapse: collapse;
+  border: 0.5px solid gray;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  width: 100px;
+}
+div#space {
+  margin: 20px;
+}
