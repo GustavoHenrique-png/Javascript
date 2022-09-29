@@ -7,10 +7,30 @@ botaoAdicionar.addEventListener("click", function(event){
     adicionaAluno(aluno)
 })
 function obterAluno(form){
+    
+    let nota1= form.primeiraNota.value
+    let nota2= form.segundaNota.value
+
+    let media = eval(`(${nota1}+${nota2})/2`)
+    console.log(nota1)
+
+    let situacao = checaMedia(media)
+
+    function checaMedia(){
+        if(media >= 6){
+            return ('Aprovado')
+        }
+        else{
+            return('Reprovado')
+        }
+    }
+
     var aluno ={
         nome: form.nome.value,
         primeiraNota: form.primeiraNota.value,
-        segundaNota: form.segundaNota.value
+        segundaNota: form.segundaNota.value,
+        media : media,
+        situacao: situacao
     }
 
     return aluno
@@ -22,6 +42,8 @@ function montaLinha(aluno){
     alunoTr.appendChild(montaCelula(aluno.nome,'info-nome'))
     alunoTr.appendChild(montaCelula(aluno.primeiraNota,'info-prNota'))
     alunoTr.appendChild(montaCelula(aluno.segundaNota,'info-sgNota'))
+    alunoTr.appendChild(montaCelula(aluno.media,'info-media'))
+    alunoTr.appendChild(montaCelula(aluno.situacao,'info-status'))
 
     return alunoTr
 }
